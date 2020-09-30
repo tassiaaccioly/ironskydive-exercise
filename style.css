@@ -134,30 +134,29 @@ h5 {
 }
 
 .container {
+    width: 370px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin: 0 30px;
-    padding: 0 40px;
 }
 
 .text {
-    font-size: 2em;
+    font-size: 1.6em;
     font-weight: 100;
     text-align: center;
 }
 
 #general-information .text {
-    padding: 20px 0;
+    padding: 25px;
 }
 
 .link-btn {
     font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
     letter-spacing: 0.5px;
-    height: 60px;
-    width: 200px;
-    margin: 22px 0 0;
+    height: 55px;
+    width: 180px;
+    margin: 10px 0 0;
     font-size: 2em;
     font-weight: 700;
     background-color: rgb(67, 163, 230);
@@ -176,12 +175,12 @@ h5 {
     padding: 70px 0 60px;;
 }
 
-#structure div {
+#structure > div {
     display: flex;
     align-content: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 15px 200px;
+    margin: 15px 0;
 }
 
 .service-box {
@@ -214,12 +213,12 @@ h5 {
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 0 auto;
-    padding: 80px 350px;
+    padding: 80px 190px;
 }
 
 #team hr {
     width: 100%;
-    margin: 0 30rem 3rem;
+    margin: 0 23rem 3rem;
     border-top: 1px solid white;
 }
 
@@ -228,7 +227,6 @@ h5 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     width: 35rem;
     text-align: center;
 }
@@ -281,31 +279,31 @@ h5 {
 
 #schedule {
     margin: 6rem;
-    /* display: grid;
-    grid-template-areas: "schedule schedule" "table form"; */
 }
 
-/* #schedule h3 {
-    grid-area: schedule;
-} */
-
 .table {
-    margin: 3rem auto;
-    /* grid-area: table; */
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 auto 60px;
+}
+
+.table th,
+td {
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding: 5px 10px;
 }
 
 .form {
-    font-size: 1.5em;
+    font-size: 1.7em;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* grid-area: form; */
 }
 
 .form .input {
     font-size: .8em;
-    width: 30%;
+    width: 35%;
     padding: 8px 10px;
     margin-bottom: 15px;
     border: 2px solid rgb(234, 234, 234);
@@ -322,16 +320,35 @@ h5 {
 /* Footer Section */
 
 .footer {
-    font-size: 1.9em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2em;
     text-align: center;
+    padding: 70px 0;
+    margin-bottom: 60px;
+}
 
+.footer h5 {
+    margin-bottom: 15px;
 }
 
 .footer a {
     color: rgb(67, 163, 230);
+    font-size: .8em;
+}
+
+.footer ul {
+    list-style: none;
 }
 
 .address {
     font-size: .8em;
     font-style: normal;
+    margin: 0 0 30px;
+}
+
+.map-frame {
+    height: 375px;
+    width: 50%;
 }
